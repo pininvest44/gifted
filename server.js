@@ -34,7 +34,7 @@ app.post('/api/bulk-stk', async (req, res) => {
       results.push({ phone, status: 'FAILED', error: e.message, reference });
     }
 
-    await delay(2000);
+    await delay(3500);
   }
 
   fs.writeFileSync('./logs/transactions.json', JSON.stringify(results, null, 2));
