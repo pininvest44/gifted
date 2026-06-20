@@ -1,0 +1,7 @@
+
+services:
+  - type: web
+    name: gifted-bulk-stk
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
